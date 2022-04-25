@@ -1,0 +1,896 @@
+
+ *{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    line-height: 22px;
+}
+
+ /* Body: aplica a toda la pagina */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+
+video {
+    width: 300px;
+}
+
+ /* NAVEGADOR */
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color:  #d4d4d4;
+    top: 0;
+    padding-left: 10px;
+    justify-content: start;
+    padding-left: 40px;
+}
+
+nav img {
+    height: 50px;
+}
+
+/* Ul del nav */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 15px;
+}
+
+/* Li nav */
+.li_nav {
+    padding: 10px;
+}
+
+/* Links nav */
+.href_nav {
+    font-size: 1rem;
+    color: black;  
+}
+
+/* /NAVEGADOR */
+
+
+
+
+
+
+/* Header de todos los htmls */
+header {
+    text-align: center;
+    background-color:#7b2e2e;
+    padding-bottom: 10px;
+}
+
+/* H1: de todos los htmls */
+.titulo {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 100px;
+    padding-top: 10px;   
+}
+
+#titulo_index {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+/* H4 (subtitulo) de todos los htmls */
+.subtitulo {
+    color: rgb(36, 33, 33);
+    font-style: italic;
+    font-size: .8rem;
+    font-weight: 400;
+    padding-top: 2px; 
+    padding-bottom: 5px;     
+}
+
+/* Imagen del header index */
+.img_restaurante {
+    display: none;
+}
+
+.main_index {
+    display: grid;
+    grid-template-areas: 
+    "explicacion"
+    "cfns"
+    "comenzar_busqueda"
+    ;
+    grid-row-gap: 100px;
+}
+
+
+
+/* Seccion explicacion: elemento padre */
+.explicacion {
+    grid-area: explicacion;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-left: 10px; 
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Imágen explicación (círculos): elemento hijo */
+.img_circulos {
+    height: 200px;
+    animation-name: animacion-1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+@keyframes animacion-1 {
+    0% { 
+        transform: scale(1, 1)
+        
+    }
+    25% { 
+        transform: scale(.8, .8)
+    }
+    75% {
+        transform: scale(1, 1);
+    }
+    100% { 
+        transform: scale(.8, .8)
+    }
+}
+
+/* Texto explicación: elemento hijo */
+.aclaracion_img {
+    text-align: center;
+    font-size: 1rem;
+}
+.resaltado {
+    color: rgb(160, 8, 8);
+    font-size: larger;
+}
+
+/* Section: como funciona nuestra pagina */
+.cfns {
+    grid-area: cfns;
+    text-align: center;
+    background-color: #7b2e2e;
+    padding-top: 10px;
+    padding-bottom: 9px;
+
+}
+/* H2 de la seccion */
+.cfns_h2 {
+    font-weight: 350;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+video {
+    max-width: 50vh;
+}
+
+/* Section: comenzar busqueda */
+.comenzar_busqueda {
+    grid-area: comenzar_busqueda;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* H2: estas listo */
+.h2_btn {
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+    font-weight: 350;
+}
+
+/* H4: haz click aqui */
+.h4_btn {
+    font-size: .8rem;
+    margin-top: 2px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Boton: comenzar busqueda */
+.btn {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    padding: 5px 5px 5px 5px;
+    background-color: #7b2e2e;
+    margin-top: 3px;
+}
+
+/* FOOTER */
+
+/* Footer general */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color:#7b2e2e;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.p_footer {
+    color: black;
+    font-size: .7rem;
+}
+    
+footer img {
+    height: 30px;
+    padding-left: 5px;
+}
+/* /FOOTER */
+
+
+/* BUSQUEDA */
+
+/* Div: contiene a ambos forms */
+.contenedor_busqueda {
+    display: grid;
+    grid-template-areas:
+    "lado_izq" 
+    "lado_der";
+    padding: 0px 10px 0px 10px ;
+    margin-top: 50px;
+}
+
+/* Form lado izquierdo */
+.lado_izq {
+    grid-area: lado_izq;
+}
+
+/* Form lado derecho */
+.lado_der {
+    grid-area: lado_der;
+}
+
+/* Titulos de cada pregunta */
+.p_form {
+    padding-top: 30px;
+    font-size: .9rem;
+    padding-bottom: 5px;
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* id: completar con barrios */
+#introduzca_barrios {
+    font-size: .9rem;
+    margin-top: 30px;
+    padding-left: 5px;
+    background-color: #e7e5e5;
+}
+
+/* input: cant comenzales */
+.input_cc {
+    background-color: #e7e5e5;
+}
+
+/* divs de inputs con texto */
+.input_der {
+    font-size: .7rem;
+    padding-bottom: 5px;
+}
+
+/* tabla */
+table tbody tr td {
+    border: solid 1px;
+    padding: 2px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+/* Boton enviar */
+.div_btn_enviar {
+    display: block;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 100px;
+}
+.p_btn_enviar {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* /BUSQUEDA */
+
+
+
+
+
+/* MUNDO */
+/* imagen mapa mundi + nombres ciudades */
+.header_mundo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Foto mapa mundi */
+.img_header_mundo {
+    display: none;
+}
+
+
+/* paises del header */
+.lista_paises {
+    display: flex;
+    flex-direction: column;
+}
+/* elementos li */
+.paises {
+    padding-top: 10px;
+    font-size: .8rem;
+    font-style: italic;
+    font-weight: 300;
+    color: black;
+}
+
+.div_paises {
+    background-color: #e7e5e5;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+/* Titulos de los paises */
+.h4_paises {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-top: 11px;
+}
+
+/* parrafos de cada pais */
+.p_paises {
+    text-align: justify;
+    font-size: .8rem;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+
+/* Imagenes de platos tipicos */
+.imagenes_platos {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    max-height: 150px;
+}
+.img_platos {
+    max-width: 260px;
+    margin-left: 5px;
+    border: solid 2px black ;
+    margin-bottom: 3px;
+}
+
+.main_mundo {
+    margin-bottom: 100px;
+}
+/* /MUNDO */
+
+
+
+
+/* NOSOTROS */
+
+#main_nosotros {
+    background-color: transparent;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+/* Párrafo header */
+.p_nosotros {
+    font-size: .9rem;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+/* bloque cada persona */
+.div_personas {
+    display: flex;
+    justify-content: start;
+    margin-top: 30px;
+    padding: 10px 15px 10px 15px;
+    background-color: #bbb9b9d6;
+}
+
+/* lista datos de cada persona */
+.ul_descripcion_personal {
+    font-size: .7rem;
+}
+.titulos_descripcion {
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* foto de cada persona */
+.foto_carnet {
+    height: 80px;
+    width: fit-content;
+    padding-right: 10px;
+    align-self: center;
+}
+
+/* /NOSOTROS */
+
+
+
+
+/* PREGUNTAS FRECUENTES */
+/* Contenedor de cada pregunta */
+.div_pregunta {
+    padding: 15px 10px 15px 10px;
+    margin-top: 20px;
+}
+
+/* Cada pregunta */
+.titulo_pregunta {
+    font-size: .9rem;
+    font-weight: 500;
+    padding-bottom: 3px;
+}
+/* Cada respuesta */
+.repuesta {
+    text-align: justify;
+    font-size: .8rem;
+}
+
+/* Div: insertar preguntas */
+.insertar_preguntas {
+    background-color: #7b2e2e;
+    margin-top: 50px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 100px;
+}
+
+/* Texto aclaracion para enviar */
+.p_enviar_pregunta {
+    font-size: .96rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+/* Espacio para insertar */
+.input_preguntas {
+    font-size: .8rem;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+    margin-bottom: 10px;
+    background-color: #d4d4d4;
+
+}
+
+/* Boton enviar */
+.enviar_pregunta {
+    background-color: #d4d4d4;
+    display: inline-block;
+    padding: 5px;
+    /* margin-left: 30px; */
+    font-size: .8rem;
+}
+.enviar_pregunta_href {
+    color: black;
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+    
+    /* Body: aplica a toda la pagina */
+    body {
+        background-image: url(public/imagenes/restaurante.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-size: 10px;
+    }
+
+
+    /* NAVEGADOR */
+    nav {
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        z-index: 1;
+        padding-left: 10px;
+        justify-content: space-between;
+    }
+
+
+    /* Ul del nav */
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        padding-right: 30px;
+    }
+
+    /* Links nav */
+    .href_nav {
+        font-size: 1rem;
+    }
+
+    /* Links nav: hover */
+    .li_nav:hover {
+        background-color:#bdbdbd ;
+    }
+
+    /* Li nav */
+    .li_nav {
+        padding: 10px;
+        transition: all ease-in-out .2s;
+    }
+
+    /* /NAVEGADOR */
+
+
+
+
+
+
+    /* Header de todos los htmls */
+    header {
+        text-align: right;
+        padding-right: 15vh;
+        margin-top: 150px;
+    }
+
+    /* H1: de todos los htmls */
+    .titulo {
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 10px;
+    }
+
+    /* H4 (subtitulo) de todos los htmls */
+    .subtitulo {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    /* Imagen del header index */
+    .img_restaurante {
+        display: inline-block;
+        /* margin-left: 53vw; */
+        filter: brightness(60%);
+        width: 600px; 
+        height: 300px;
+    }
+
+
+    .main_index {
+        grid-row-gap: 200px;
+    }
+
+
+
+    /* Seccion explicacion: elemento padre */
+    .explicacion {
+        margin-top: 200px;
+        flex-direction: row;
+        padding-left: 50px; 
+        padding-right: 55px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: white;
+
+    }
+
+    /* Imágen explicación (círculos): elemento hijo */
+    .img_circulos {
+        margin-right: 30px;  
+        height: 300px;
+    }
+
+
+    /* Texto explicación: elemento hijo */
+    .aclaracion_img {
+        text-align: justify;
+        line-height: 45px;
+    }
+    
+
+
+
+    /* Section: como funciona nuestra pagina */
+    .cfns {
+        padding-top: 21px;
+        padding-bottom: 20px;
+
+    }
+    /* H2 de la seccion */
+    .cfns_h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+
+
+    /* Section: comenzar busqueda */
+    .comenzar_busqueda {
+        background-color: white;
+        padding-bottom: 10px;
+    }
+
+    /* H2: estas listo */
+    .h2_btn {
+        padding-top: 10px;
+        font-size: 1.8rem;
+    }
+
+    /* H4: haz click aqui */
+    .h4_btn {
+        font-size: 1rem;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    /* Boton: comenzar busqueda */
+    .btn {
+        font-size: 1.5rem;
+        padding: 10px 10px 10px 10px;
+        border-style: ridge;
+        border-color: #7b2e2e;
+    }
+
+
+
+    /* FOOTER */
+
+    /* Footer general */
+    footer {
+        text-align: center;
+    }
+
+
+    .p_footer {
+        color: black;
+        font-size: 1rem;
+    }
+
+    footer img {
+        height: 40px;
+        padding-left: 10px;
+    }
+    /* /FOOTER */
+
+
+
+    /* BUSQUEDA */
+
+    /* Div: contiene a ambos forms */
+    .contenedor_busqueda {
+        grid-template-areas:
+        "lado_izq lado_der";
+        grid-column-gap: 20px;
+
+        background-color:#7b2e2e;
+        padding: 20px 70px 50px 70px ;
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+
+    .lado_izq {
+        grid-area: lado_izq;
+    }
+
+    /* Titulos de cada pregunta */
+    .p_form {
+        padding-top: 50px;
+        font-size: 1rem;
+    }
+
+    /* id: completar con barrios */
+    #introduzca_barrios {
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+    
+    /* divs de inputs con texto */
+    .input_der {
+        font-size: .8rem;
+        padding-bottom: 5px;
+    }
+
+    /* tabla */
+    table tbody tr td {
+        font-size: 1rem;
+    }
+
+    /* Boton enviar */
+    .div_btn_enviar {
+        display: inline-block;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-bottom: 0px;
+
+    }
+    .p_btn_enviar {
+        margin-top: 50px;
+    }
+
+
+    /* /BUSQUEDA */
+
+
+
+
+    /* MUNDO */
+
+    /* imagen mapa mundi + nombres ciudades */
+    .header_mundo {
+        justify-content: end;
+    }
+
+    /* Foto mapa mundi */
+    .img_header_mundo {
+        display: inline-block;
+        max-width: 700px;
+        padding-right: 10px;
+        animation-name: animacion-1; 
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 5s;
+    }
+
+
+    .main_mundo {
+        margin-bottom: 200px;
+    }
+
+    /* paises del header */
+    .lista_paises {
+        justify-content: end;
+        align-self: center;
+    }
+     /* elementos li */
+    .paises {
+        padding-top: 60px;
+        font-size: 1rem;
+    }
+
+    /* Bloque de cada pais */
+    .div_paises {
+        background-color: white;
+        margin-top: 150px;
+    }
+
+    /* Titulos de los paises */
+    .h4_paises {
+        font-size: 1.6rem;
+    }
+
+    /* parrafos de cada pais */
+    .p_paises {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    /* Imagenes de platos tipicos */
+    .imagenes_platos {
+        flex-direction: row;
+        max-height: fit-content;
+    }
+    .img_platos {
+        width: 300px;
+        margin-left: 5px;
+        margin-bottom: 0px;
+    }
+
+    /* /MUNDO */
+
+
+
+
+    /* NOSOTROS */
+
+    #main_nosotros {
+        margin-top: 80px;
+        margin-bottom: 200px;
+    }
+    /* Párrafo header */
+    .p_nosotros {
+        font-size: 1.2rem;
+        padding-left: 30vw;
+    }
+
+    /* bloque cada persona */
+    .div_personas {
+        padding: 15px 15px 15px 15px;
+    }
+
+    /* lista datos de cada persona */
+    .ul_descripcion_personal {
+        font-size: 1rem;
+    }
+    .titulos_descripcion {
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    /* foto de cada persona */
+    .foto_carnet {
+        height: 80px;
+        width: fit-content;
+        padding-right: 10px;
+    }
+
+    /* /NOSOTROS */
+
+
+
+    /* PREGUNTAS FRECUENTES */
+    #contenedor_preguntasf {
+        background-color: transparent;
+        margin-top: 0px;
+        margin-bottom: 80px;
+    }
+
+    /* Contenedor de cada pregunta */
+    .div_pregunta {
+        background-color: #e7e5e5b9;
+        margin-top: 80px;
+    }
+
+    /* Cada pregunta */
+    .titulo_pregunta {
+        font-size: 1.2rem;
+    }
+    /* Cada respuesta */
+    .repuesta {
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+
+    /* Texto aclaracion para enviar */
+    .p_enviar_pregunta {
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+
+    /* Div: insertar preguntas */
+    .insertar_preguntas {
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 200px;
+    }
+
+    /* Espacio para insertar */
+    .input_preguntas {
+        font-size: 1rem;
+        padding-left: 200px;
+    }
+
+    /* Boton enviar */
+    .enviar_pregunta {
+        padding: 5px;
+        margin-left: 30px;
+        font-size: 1rem;
+    }
+}
