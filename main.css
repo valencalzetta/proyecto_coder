@@ -212,6 +212,25 @@ video {
     padding: 5px 5px 5px 5px;
     background-color: #7b2e2e;
     margin-top: 3px;
+    animation-name: animacion-btn;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+@keyframes animacion-btn {
+    0% { 
+        transform: translate(20px, 0px);   
+    }
+    25% { 
+        transform: translate(-20px, 0px);
+    }
+    75% {
+        transform: translate(20px, 0px);
+    }   
+    100% { 
+        transform: translate(-20px, 0px);
+    }
 }
 
 /* FOOTER */
