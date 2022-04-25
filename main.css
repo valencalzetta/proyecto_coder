@@ -770,11 +770,26 @@ table tbody tr td {
         display: inline-block;
         max-width: 700px;
         padding-right: 10px;
-        animation-name: animacion-1; 
+        animation-name: animacion-2; 
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
         animation-duration: 5s;
     }
+
+    @keyframes animacion-2 {
+        0% { 
+            transform: translate(40px, 0px);   
+        }
+        25% { 
+            transform: translate(-40px, 0px);
+        }
+        75% {
+            transform: translate(40px, 0px);
+        }   
+        100% { 
+            transform: translate(-40px, 0px);
+        }
+    } 
 
 
     .main_mundo {
