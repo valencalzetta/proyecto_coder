@@ -611,8 +611,8 @@ table tbody tr td {
     .explicacion {
         margin-top: 200px;
         flex-direction: row;
-        padding-left: 50px; 
-        padding-right: 55px;
+        padding-left: 100px; 
+        padding-right: 100px;
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: white;
@@ -629,7 +629,9 @@ table tbody tr td {
     /* Texto explicación: elemento hijo */
     .aclaracion_img {
         text-align: justify;
-        line-height: 45px;
+        font-size: 1rem;
+        line-height: 40px;
+        padding: 0px 50px 0px 50px;
     }
     
 
