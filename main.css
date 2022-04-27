@@ -813,6 +813,7 @@ table tbody tr td {
     .div_paises {
         background-color: white;
         margin-top: 150px;
+        padding: 0px 100px 0px 100px;
     }
 
     /* Titulos de los paises */
@@ -824,6 +825,7 @@ table tbody tr td {
     .p_paises {
         font-size: 1rem;
         line-height: 25px;
+        padding-bottom: 10px;
     }
 
     /* Imagenes de platos tipicos */
