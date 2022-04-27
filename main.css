@@ -564,6 +564,14 @@ table tbody tr td {
         transition: all ease-in-out .2s;
     }
 
+    .logo {
+        transition: all ease-in-out .2s;
+    }
+
+    .logo:hover {
+        background-color:#bdbdbd ;
+    }
+
     /* /NAVEGADOR */
 
 
