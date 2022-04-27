@@ -117,15 +117,15 @@ header {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    padding-left: 10px; 
-    padding-right: 10px;
+    padding-left: 30px; 
+    padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 /* Imágen explicación (círculos): elemento hijo */
 .img_circulos {
-    height: 200px;
+    height: 180px;
     animation-name: animacion-1;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -150,8 +150,8 @@ header {
 
 /* Texto explicación: elemento hijo */
 .aclaracion_img {
-    text-align: center;
-    font-size: 1rem;
+    text-align: justify;
+    font-size: .8rem;
 }
 .resaltado {
     color: rgb(160, 8, 8);
