@@ -16,9 +16,6 @@ body {
 }
 
 
-video {
-    width: 300px;
-}
 
  /* NAVEGADOR */
 nav {
@@ -61,11 +58,12 @@ header {
     font-size: 1.5rem;
     font-weight: 200;
     margin-top: 100px;
-    padding-top: 10px;   
+    padding-top: 10px; 
+    line-height: 2vw;  
 }
 
 #titulo_index {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 5px;
     padding-top: 20px;
 }
@@ -84,26 +82,12 @@ header {
     display: none;
 }
 
-.main_index {
-    display: grid;
-    grid-template-areas: 
-    "explicacion"
-    "cfns"
-    "comenzar_busqueda"
-    ;
-    grid-row-gap: 100px;
+
+.row {
+    margin-bottom: 100px;
 }
-
-
-
 /* Seccion explicacion: elemento padre */
 .explicacion {
-    grid-area: explicacion;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
     padding-left: 30px; 
     padding-right: 30px;
     padding-top: 10px;
@@ -147,8 +131,8 @@ header {
 
 /* Section: como funciona nuestra pagina */
 .cfns {
-    grid-area: cfns;
-    text-align: center;
+    align-content: center;
+    flex-direction: column;
     background-color: #7b2e2e;
     padding-top: 10px;
     padding-bottom: 9px;
@@ -167,16 +151,15 @@ video {
 
 /* Section: comenzar busqueda */
 .comenzar_busqueda {
-    grid-area: comenzar_busqueda;
-    display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     margin-bottom: 100px;
 }
 
 /* H2: estas listo */
 .h2_btn {
+    text-align: center;
     margin-bottom: 2px;
     font-size: 1.2rem;
     font-weight: 350;
@@ -184,6 +167,8 @@ video {
 
 /* H4: haz click aqui */
 .h4_btn {
+    text-align: center;
+
     font-size: .8rem;
     margin-top: 2px;
     font-weight: 300;
@@ -192,11 +177,7 @@ video {
 
 /* Boton: comenzar busqueda */
 .btn {
-    display: block;
-    text-decoration: none;
-    font-size: 1rem;
     color: black;
-    padding: 5px 5px 5px 5px;
     background-color: #7b2e2e;
     margin-top: 3px;
     animation-name: animacion-1;
@@ -616,7 +597,6 @@ table tbody tr td {
 
     /* Imágen explicación (círculos): elemento hijo */
     .img_circulos {
-        margin-right: 30px;  
         height: 300px;
     }
 
@@ -626,7 +606,7 @@ table tbody tr td {
         text-align: justify;
         font-size: 1rem;
         line-height: 40px;
-        padding: 0px 50px 0px 50px;
+        /* padding: 0px 50px 0px 50px; */
     }
     
 
