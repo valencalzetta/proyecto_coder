@@ -22,13 +22,11 @@ video {
 
  /* NAVEGADOR */
 nav {
-    display: flex;
-    flex-direction: column;
     background-color:  #d4d4d4;
-    top: 0;
-    padding-left: 10px;
-    justify-content: start;
+    justify-content: end;
+    font-size: .9rem;
     padding-left: 40px;
+
 }
 
 nav img {
@@ -41,17 +39,6 @@ nav ul {
     flex-direction: column;
     align-items: start;
     padding-right: 15px;
-}
-
-/* Li nav */
-.li_nav {
-    padding: 10px;
-}
-
-/* Links nav */
-.href_nav {
-    font-size: 1rem;
-    color: black;  
 }
 
 /* /NAVEGADOR */
