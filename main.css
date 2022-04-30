@@ -59,7 +59,7 @@ header {
     font-weight: 200;
     margin-top: 100px;
     padding-top: 10px; 
-    line-height: 2vw;  
+    line-height: 25px;  
 }
 
 #titulo_index {
@@ -83,7 +83,7 @@ header {
 }
 
 
-.row {
+.row_margin {
     margin-bottom: 100px;
 }
 /* Seccion explicacion: elemento padre */
@@ -216,26 +216,25 @@ footer img {
 /* /FOOTER */
 
 
+
+
 /* BUSQUEDA */
 
-/* Div: contiene a ambos forms */
+/* Div: contiene a form */
 .contenedor_busqueda {
-    display: grid;
-    grid-template-areas:
-    "lado_izq" 
-    "lado_der";
-    padding: 0px 10px 0px 10px ;
+    padding: 0px 10px 0px 40px ;
     margin-top: 50px;
+    grid-template-areas: 
+    "form_izq"
+    "form_der";
 }
 
-/* Form lado izquierdo */
-.lado_izq {
-    grid-area: lado_izq;
+.form_izq {
+    grid-area: form_izq;
 }
 
-/* Form lado derecho */
-.lado_der {
-    grid-area: lado_der;
+.form_der {
+    grid-area: form_der;
 }
 
 /* Titulos de cada pregunta */
@@ -275,9 +274,9 @@ table tbody tr td {
     font-size: .8rem;
 }
 
+
 /* Boton enviar */
 .div_btn_enviar {
-    display: block;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 100px;
@@ -582,10 +581,6 @@ table tbody tr td {
     .explicacion {
         margin-top: 200px;
         flex-direction: row;
-        /* padding-left: 100px; 
-        padding-right: 100px;
-        padding-top: 10px;
-        padding-bottom: 10px; */
         background-color: white;
 
     }
@@ -675,16 +670,22 @@ table tbody tr td {
 
     /* Div: contiene a ambos forms */
     .contenedor_busqueda {
-        grid-template-areas:
-        "lado_izq lado_der";
-        grid-column-gap: 20px;
-
         background-color:#7b2e2e;
         padding: 20px 70px 50px 70px ;
         margin-top: 100px;
         margin-bottom: 200px;
+        padding-left: 100px !important; 
     }
-
+    .contenedor_categorias {
+        display: grid;
+        grid-template-areas: 
+        "lado_izq lado_der";
+    }
+    
+    .lado_der {
+        grid-area: lado der;
+    }
+    
     .lado_izq {
         grid-area: lado_izq;
     }
@@ -722,6 +723,10 @@ table tbody tr td {
     }
     .p_btn_enviar {
         margin-top: 50px;
+    }
+
+    .btn_enviar {
+        background-color: #d4d4d4;
     }
 
 
