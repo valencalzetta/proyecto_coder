@@ -343,17 +343,9 @@ table tbody tr td {
 
 /* Imagenes de platos tipicos */
 .imagenes_platos {
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-    max-height: 150px;
+   align-self: center;
 }
-.img_platos {
-    max-width: 260px;
-    margin-left: 5px;
-    border: solid 2px black ;
-    margin-bottom: 3px;
-}
+
 
 .main_mundo {
     margin-bottom: 100px;
@@ -806,7 +798,7 @@ table tbody tr td {
     /* Imagenes de platos tipicos */
     .imagenes_platos {
         flex-direction: row;
-        max-height: fit-content;
+        
     }
     .img_platos {
         width: 300px;
