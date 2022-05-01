@@ -228,18 +228,18 @@ footer img {
 .contenedor_busqueda {
     padding: 0px 10px 0px 40px ;
     margin-top: 50px;
-    grid-template-areas: 
+    /* grid-template-areas: 
     "form_izq"
-    "form_der";
+    "form_der"; */
 }
 
-.form_izq {
+/* .form_izq {
     grid-area: form_izq;
 }
 
 .form_der {
     grid-area: form_der;
-}
+} */
 
 /* Titulos de cada pregunta */
 .p_form {
@@ -385,7 +385,10 @@ table tbody tr td {
     margin-top: 30px;
     padding: 10px 15px 10px 15px;
     background-color: #bbb9b9d6;
+    margin-bottom: 10px;
+    
 }
+
 
 /* lista datos de cada persona */
 .ul_descripcion_personal {
@@ -823,10 +826,15 @@ table tbody tr td {
         font-size: 1.2rem;
         padding-left: 30vw;
     }
+    .row_nosotros {
+        flex-wrap: nowrap !important;
+        justify-content: center;
+    }
 
     /* bloque cada persona */
     .div_personas {
         padding: 15px 15px 15px 15px;
+        margin: 10px 10px 10px 10px;
     }
 
     /* lista datos de cada persona */
