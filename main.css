@@ -306,6 +306,7 @@ table tbody tr td {
 }
 
 .div_paises {
+    justify-content: center;
     background-color: #e7e5e5;
     margin-top: 100px;
     padding: 20px;
@@ -331,6 +332,7 @@ table tbody tr td {
 .imagenes_platos {
    align-self: center;
    margin-bottom: 10px;
+   max-width: 500px;
 }
 
 
