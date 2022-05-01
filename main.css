@@ -30,14 +30,6 @@ nav img {
     height: 50px;
 }
 
-/* Ul del nav */
-nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding-right: 15px;
-}
-
 /* /NAVEGADOR */
 
 
@@ -99,6 +91,7 @@ header {
 
 /* Imágen explicación (círculos): elemento hijo */
 .img_circulos {
+    max-width: fit-content;
     height: 180px;
     animation-name: animacion-1;
     animation-iteration-count: infinite;
@@ -228,18 +221,7 @@ footer img {
 .contenedor_busqueda {
     padding: 0px 10px 0px 40px ;
     margin-top: 50px;
-    /* grid-template-areas: 
-    "form_izq"
-    "form_der"; */
 }
-
-/* .form_izq {
-    grid-area: form_izq;
-}
-
-.form_der {
-    grid-area: form_der;
-} */
 
 /* Titulos de cada pregunta */
 .p_form {
@@ -413,6 +395,10 @@ table tbody tr td {
 
 
 /* PREGUNTAS FRECUENTES */
+
+#contenedor_preguntasf {
+    margin-top: 50px;
+}
 /* Contenedor de cada pregunta */
 .div_pregunta {
     padding: 15px 10px 15px 10px;
@@ -447,28 +433,8 @@ table tbody tr td {
     margin-bottom: 5px;
 }
 
-/* Espacio para insertar */
-.input_preguntas {
-    font-size: .8rem;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 100px;
-    margin-bottom: 10px;
-    background-color: #d4d4d4;
-
-}
-
-/* Boton enviar */
-.enviar_pregunta {
-    background-color: #d4d4d4;
-    display: inline-block;
-    padding: 5px;
-    /* margin-left: 30px; */
-    font-size: .8rem;
-}
-.enviar_pregunta_href {
-    color: black;
+#button-addon2 {
+    animation: none;
 }
 
 
@@ -488,46 +454,7 @@ table tbody tr td {
 
     /* NAVEGADOR */
     nav {
-        flex-direction: row;
-        position: fixed;
-        width: 100%;
         height: 50px;
-        z-index: 1;
-        padding-left: 10px;
-        justify-content: space-between;
-    }
-
-
-    /* Ul del nav */
-    nav ul {
-        flex-direction: row;
-        align-items: center;
-        justify-content: end;
-        padding-right: 30px;
-    }
-
-    /* Links nav */
-    .href_nav {
-        font-size: 1rem;
-    }
-
-    /* Links nav: hover */
-    .li_nav:hover {
-        background-color:#bdbdbd ;
-    }
-
-    /* Li nav */
-    .li_nav {
-        padding: 10px;
-        transition: all ease-in-out .2s;
-    }
-
-    .logo {
-        transition: all ease-in-out .2s;
-    }
-
-    .logo:hover {
-        background-color:#bdbdbd ;
     }
 
     /* /NAVEGADOR */
@@ -729,7 +656,6 @@ table tbody tr td {
         background-color: #d4d4d4;
     }
 
-
     /* /BUSQUEDA */
 
 
@@ -858,16 +784,13 @@ table tbody tr td {
 
 
     /* PREGUNTAS FRECUENTES */
-    #contenedor_preguntasf {
-        background-color: transparent;
-        margin-top: 0px;
-        margin-bottom: 80px;
-    }
 
     /* Contenedor de cada pregunta */
+
     .div_pregunta {
         background-color: #e7e5e5b9;
         margin-top: 80px;
+        margin: 10px 10px 10px 10px;
     }
 
     /* Cada pregunta */
@@ -886,25 +809,6 @@ table tbody tr td {
         font-size: 1.3rem;
         font-weight: 400;
         font-style: italic;
-        margin-bottom: 5px;
-    }
-
-    /* Div: insertar preguntas */
-    .insertar_preguntas {
-        padding: 10px 20px 10px 20px;
-        margin-bottom: 200px;
-    }
-
-    /* Espacio para insertar */
-    .input_preguntas {
-        font-size: 1rem;
-        padding-left: 200px;
-    }
-
-    /* Boton enviar */
-    .enviar_pregunta {
-        padding: 5px;
-        margin-left: 30px;
-        font-size: 1rem;
+        margin-bottom: 10px;
     }
 }
