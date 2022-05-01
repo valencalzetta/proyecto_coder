@@ -147,6 +147,7 @@ header {
     font-weight: 350;
     font-size: 1rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 video {
@@ -191,6 +192,9 @@ video {
     animation-duration: 5s;
 }
 
+.btn_cb {
+    width: fit-content;
+}
 
 /* FOOTER */
 
@@ -344,6 +348,7 @@ table tbody tr td {
 /* Imagenes de platos tipicos */
 .imagenes_platos {
    align-self: center;
+   margin-bottom: 10px;
 }
 
 
@@ -798,13 +803,9 @@ table tbody tr td {
     /* Imagenes de platos tipicos */
     .imagenes_platos {
         flex-direction: row;
-        
+        max-width: 50vw;
     }
-    .img_platos {
-        width: 300px;
-        margin-left: 5px;
-        margin-bottom: 0px;
-    }
+
 
     /* /MUNDO */
 
