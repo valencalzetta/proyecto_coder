@@ -20,10 +20,7 @@ body {
  /* NAVEGADOR */
 nav {
     background-color:  #d4d4d4;
-    justify-content: end;
     font-size: .9rem;
-    padding-left: 40px;
-
 }
 
 nav img {
@@ -49,7 +46,7 @@ header {
     color: #161616;
     font-size: 1.5rem;
     font-weight: 200;
-    margin-top: 100px;
+    margin-top: 50px;
     padding-top: 10px; 
     line-height: 25px;  
 }
@@ -78,6 +75,7 @@ header {
 .row_margin {
     margin-bottom: 100px;
 }
+
 /* Seccion explicacion: elemento padre */
 .explicacion {
     flex-direction: column;
@@ -446,10 +444,6 @@ table tbody tr td {
     
     /* Body: aplica a toda la pagina */
     body {
-        background-image: url(public/imagenes/restaurante.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         font-size: 10px;
     }
 
@@ -461,16 +455,11 @@ table tbody tr td {
 
     /* /NAVEGADOR */
 
-
-
-
-
-
     /* Header de todos los htmls */
     header {
         text-align: right;
         padding-right: 15vh;
-        margin-top: 150px;
+        margin-top: 80px;
     }
 
     /* H1: de todos los htmls */
@@ -493,17 +482,10 @@ table tbody tr td {
     /* Imagen del header index */
     .img_restaurante {
         display: inline-block;
-        /* margin-left: 53vw; */
         filter: brightness(60%);
         width: 600px; 
         height: 300px;
     }
-
-
-    .main_index {
-        grid-row-gap: 200px;
-    }
-
 
 
     /* Seccion explicacion: elemento padre */
@@ -583,7 +565,6 @@ table tbody tr td {
 
 
     .p_footer {
-        color: black;
         font-size: 1rem;
     }
 
@@ -714,7 +695,7 @@ table tbody tr td {
 
     /* Bloque de cada pais */
     .div_paises {
-        background-color: white;
+        background-color: #e7e5e5;
         margin-top: 150px;
         padding: 0px 100px 0px 100px;
     }
