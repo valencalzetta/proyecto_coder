@@ -398,6 +398,8 @@ table tbody tr td {
 
 #contenedor_preguntasf {
     margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 /* Contenedor de cada pregunta */
 .div_pregunta {
@@ -490,7 +492,7 @@ table tbody tr td {
 
     /* Seccion explicacion: elemento padre */
     .explicacion {
-        margin-top: 200px;
+        margin-top: 100px;
         flex-direction: row;
         background-color: white;
 
@@ -580,7 +582,7 @@ table tbody tr td {
 
     /* Div: contiene a ambos forms */
     .contenedor_busqueda {
-        background-color:#7b2e2e;
+        background-color: #e7e5e5;
         padding: 20px 70px 50px 70px ;
         margin-top: 100px;
         margin-bottom: 200px;
@@ -618,6 +620,11 @@ table tbody tr td {
         padding-bottom: 5px;
     }
 
+    /* padding para "cantidad de comenzales" */
+    form input {
+        padding-left: 10px;
+    }
+
     /* tabla */
     table tbody tr td {
         font-size: 1rem;
@@ -631,14 +638,7 @@ table tbody tr td {
         margin-bottom: 0px;
 
     }
-    .p_btn_enviar {
-        margin-top: 50px;
-    }
-
-    .btn_enviar {
-        background-color: #d4d4d4;
-    }
-
+ 
     /* /BUSQUEDA */
 
 
