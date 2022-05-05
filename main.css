@@ -816,3 +816,13 @@ table tbody tr td {
         margin-bottom: 10px;
     }
 }
+
+@media screen and (max-width: 1124px)  {
+    .explicacion {
+        flex-direction: column;
+    }
+
+    .img_circulos {
+        margin-bottom: 15px;
+    }
+}
