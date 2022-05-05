@@ -76,12 +76,26 @@ header {
     margin-bottom: 100px;
 }
 
+/* contenedor del main del index */
+.main_index {
+    display: grid;
+    grid-template-areas: 
+    "explicacion"
+    "cfns"
+    "comenzar_busqueda"
+    ;
+    grid-row-gap: 100px;
+}
+
 /* Seccion explicacion: elemento padre */
 .explicacion {
+    grid-area: explicacion;
+    display: flex;
+    flex-direction: column;
     flex-direction: column;
     margin-top: 100px;
     align-items: center;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 30px 10px 30px;
 }
 
 
@@ -125,8 +139,8 @@ header {
 
 /* Section: como funciona nuestra pagina */
 .cfns {
-    align-content: center;
-    align-items: center;   
+    grid-area: cfns;
+    text-align: center;
     flex-direction: column;
     background-color: #7b2e2e;
     padding-top: 10px;
@@ -148,6 +162,8 @@ video {
 
 /* Section: comenzar busqueda */
 .comenzar_busqueda {
+    grid-area: comenzar_busqueda;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -303,6 +319,11 @@ table tbody tr td {
     color: black;
 }
 
+.main_mundo {
+    margin-bottom: 100px;
+}
+
+/* Bloque de cada pais */
 .div_paises {
     justify-content: center;
     background-color: #e7e5e5;
@@ -334,9 +355,6 @@ table tbody tr td {
 }
 
 
-.main_mundo {
-    margin-bottom: 100px;
-}
 /* /MUNDO */
 
 
@@ -495,7 +513,7 @@ table tbody tr td {
         margin-top: 100px;
         flex-direction: row;
         background-color: white;
-
+        width: 85vw;
     }
 
     /* Imágen explicación (círculos): elemento hijo */
@@ -517,6 +535,7 @@ table tbody tr td {
 
     /* Section: como funciona nuestra pagina */
     .cfns {
+        
         padding-top: 21px;
         padding-bottom: 20px;
 
