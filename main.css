@@ -156,7 +156,7 @@ header {
 }
 
 video {
-    max-width: 50vh;
+    max-width: 80vw;
 }
 
 
@@ -548,7 +548,9 @@ table tbody tr td {
         margin-bottom: 20px;
     }
 
-
+    video {
+        max-width: 40vw;
+    }
 
     /* Section: comenzar busqueda */
     .comenzar_busqueda {
@@ -824,5 +826,12 @@ table tbody tr td {
 
     .img_circulos {
         margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    video {
+        max-width: 50vw;
     }
 }
